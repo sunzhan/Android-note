@@ -196,7 +196,7 @@ User类中包括一个username和一个password。
 
 	public class UserLoginPresenter {
     private ILoginView loginView;
-    private UserBiz userBiz;
+    private IUserBiz userBiz;
     private Handler mHandler = new Handler();
     public UserLoginPresenter(ILoginView loginView) {
         this.loginView = loginView;
@@ -234,7 +234,7 @@ User类中包括一个username和一个password。
     }
 	}
 
-首先需要传入ILoginView接口的实现类也就是Activity，然后得到UserBiz类的对象，执行其login方法，
+首先需要传入ILoginView接口的实现类也就是Activity，然后得到IUserBiz接口实现类的对象，执行其login方法，
 传入相应的参数，实现OnLoginListener接口回调，在相应的成功和失败方法中执行相应的操作，这里注意
 需要通过Handler.post()在UI线程中操作UI，如进度条的隐藏和Toast的显示。最后实现clear方法。
 ### 总结一下
