@@ -1,5 +1,5 @@
 # Read
-一个Android端App，可以用来阅读文章。
+Android学习笔记
 #Android Design Support Library的简单使用#
 ***
 ##AppBarLayout和ToolBar的使用##
