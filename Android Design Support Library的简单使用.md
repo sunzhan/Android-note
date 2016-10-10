@@ -104,6 +104,12 @@ TabLayout一般与ViewPager配合使用
 	app:layout_behavior="@string/appbar_scrolling_view_behavior"
 	
 以保证ViewPager中的控件的滚动可以出发AppBarLayout的滚动。
+### TabLayout有两个属性用来设置tab的显示位置：
+1）app:tabMode有两个值：fixed和scrollable。
+（2）app:tabGravity有两个值：fill和center。
+比较常用的是app:tabMode设置值scrollable，以及app:tabGravity设置值center。
+比如，当app:tabMode设置值scrollable表示此TabLayout中当子view超出屏幕边界时候，将提供滑动以便滑出不可见的那些子view。
+而app:tabGravity设置值center，在有些情况下，比如TabLayout中子view较少需要居中显示时候的情景。
 ## DrawerLayout与NavigationView侧滑菜单的使用
 首先是布局文件，最外层用DrawerLayout包裹：
 
